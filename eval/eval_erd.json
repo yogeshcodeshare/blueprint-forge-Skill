@@ -1,0 +1,82 @@
+{
+  "skill": "erd-skill",
+  "version": "2.0",
+  "description": "Binary assertion test suite for ERD Skill self-improvement loop. Each assertion is objectively true/false — automatable without human judgment.",
+  "tests": [
+    {
+      "prompt": "Create an ERD for a habit tracking mobile app using Next.js and Supabase",
+      "assertions": [
+        {"text": "Document contains a Non-Functional Requirements section with measurable targets", "type": "binary"},
+        {"text": "Document contains at least one ADR (Architectural Decision Record) entry", "type": "binary"},
+        {"text": "Each ADR includes: Context, Decision, Rationale, and Alternatives considered", "type": "binary"},
+        {"text": "Database schema includes validation rules for at least one field", "type": "binary"},
+        {"text": "Database type (SQL or NoSQL) is explicitly declared", "type": "binary"},
+        {"text": "API endpoints table includes error response codes (4xx/5xx)", "type": "binary"},
+        {"text": "Document contains SLO or SLI definitions with numeric targets", "type": "binary"},
+        {"text": "Document contains a Security section with OWASP or threat modeling reference", "type": "binary"},
+        {"text": "Document contains a Testing Strategy with at least 3 test types", "type": "binary"},
+        {"text": "Infrastructure Provisioning Checklist section present", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Write an engineering spec for an AI-powered resume builder with RAG capabilities",
+      "assertions": [
+        {"text": "Document contains an AI/LLM System Design section", "type": "binary"},
+        {"text": "AI section describes the RAG pipeline or retrieval strategy", "type": "binary"},
+        {"text": "AI section includes cost projection or token cost estimate", "type": "binary"},
+        {"text": "AI section includes quality monitoring or hallucination detection approach", "type": "binary"},
+        {"text": "Document contains LINDDUN privacy threat modeling or privacy threat analysis", "type": "binary"},
+        {"text": "PII fields are identified in the database schema", "type": "binary"},
+        {"text": "Document contains at least one ADR for a major tech choice", "type": "binary"},
+        {"text": "API versioning strategy is defined (URI path, header, or query param)", "type": "binary"},
+        {"text": "Feature flag strategy section present with rollout phases", "type": "binary"},
+        {"text": "Error handling section specifies a standardized error response format", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Create a technical spec for a multi-tenant SaaS analytics platform with 100K users",
+      "assertions": [
+        {"text": "Capacity planning section includes RPS or concurrent user targets", "type": "binary"},
+        {"text": "Non-Functional Requirements include scalability targets with numeric values", "type": "binary"},
+        {"text": "SLO targets are defined with time window (e.g., 28-day rolling window)", "type": "binary"},
+        {"text": "Error budget is calculated (1 - SLO)", "type": "binary"},
+        {"text": "Database schema specifies row-level security or multi-tenancy isolation approach", "type": "binary"},
+        {"text": "At least one ADR documents a scalability-related tech decision", "type": "binary"},
+        {"text": "Monitoring section defines at least 2 alerting thresholds", "type": "binary"},
+        {"text": "Rollback strategy is defined in Infrastructure section", "type": "binary"},
+        {"text": "Testing strategy includes performance or load testing", "type": "binary"},
+        {"text": "Seed data requirements present in Database section", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Write an ERD for a payment processing system with GDPR compliance requirements",
+      "assertions": [
+        {"text": "Document contains GDPR or LINDDUN privacy threat analysis", "type": "binary"},
+        {"text": "PII fields are flagged in the database schema with PII classification", "type": "binary"},
+        {"text": "Data retention policy is specified", "type": "binary"},
+        {"text": "Right-to-delete implementation approach is documented", "type": "binary"},
+        {"text": "Payment card data security (PCI DSS) is mentioned in security section", "type": "binary"},
+        {"text": "Encryption specifications present (at rest and in transit)", "type": "binary"},
+        {"text": "Audit logging requirements are documented", "type": "binary"},
+        {"text": "ADR for database choice includes security rationale", "type": "binary"},
+        {"text": "API endpoints for payment include idempotency key documentation", "type": "binary"},
+        {"text": "Infrastructure section mentions environment variable management for secrets", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Create an ERD to hand off to my tech-project-forge skill — Next.js SaaS project management tool",
+      "assertions": [
+        {"text": "Database type explicitly declared (SQL vs NoSQL)", "type": "binary"},
+        {"text": "Database schema includes validation rules for field types", "type": "binary"},
+        {"text": "Database section includes seed data requirements", "type": "binary"},
+        {"text": "API endpoints table includes authentication requirement per endpoint", "type": "binary"},
+        {"text": "Third-party integrations section lists services with their purpose", "type": "binary"},
+        {"text": "Tech stack table present with technology, version, and purpose columns", "type": "binary"},
+        {"text": "Implementation plan includes milestone names", "type": "binary"},
+        {"text": "At least one ADR for a key architectural decision", "type": "binary"},
+        {"text": "Non-functional requirements section present", "type": "binary"},
+        {"text": "Infrastructure provisioning checklist present", "type": "binary"}
+      ]
+    }
+  ]
+}

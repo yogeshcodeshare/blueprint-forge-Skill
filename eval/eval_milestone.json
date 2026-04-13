@@ -1,0 +1,82 @@
+{
+  "skill": "milestone-skill",
+  "version": "2.0",
+  "description": "Binary assertion test suite for Milestone Skill self-improvement loop. Tests both single-milestone and multi-milestone generation capabilities.",
+  "tests": [
+    {
+      "prompt": "Create Milestone 1 document for a habit tracking app — foundation: auth and basic CRUD",
+      "assertions": [
+        {"text": "Document contains a Context section describing what was delivered before this milestone", "type": "binary"},
+        {"text": "All tasks are organized by week (Week 1, Week 2, etc.)", "type": "binary"},
+        {"text": "Each task includes a story point estimate", "type": "binary"},
+        {"text": "All acceptance criteria use Given/When/Then format", "type": "binary"},
+        {"text": "Document contains a Definition of Ready (DoR) section", "type": "binary"},
+        {"text": "Document contains Milestone Entry Criteria with specific prerequisites", "type": "binary"},
+        {"text": "Document contains Milestone Exit Criteria with measurable items", "type": "binary"},
+        {"text": "API Contracts section present with at least one endpoint", "type": "binary"},
+        {"text": "Database Changes section present with at least one migration", "type": "binary"},
+        {"text": "Rollback Plan section present with trigger conditions", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Generate all milestones for a SaaS project management tool — I have a PRD and ERD available",
+      "assertions": [
+        {"text": "Multiple milestone documents are generated (at least 3)", "type": "binary"},
+        {"text": "Milestone 0 (or first milestone) includes infrastructure setup tasks", "type": "binary"},
+        {"text": "Each milestone has a unique goal statement", "type": "binary"},
+        {"text": "Milestone N+1 entry criteria reference Milestone N deliverables", "type": "binary"},
+        {"text": "API endpoints are distributed across milestones without duplication", "type": "binary"},
+        {"text": "Database migrations are distributed across milestones without duplication", "type": "binary"},
+        {"text": "A summary index is provided showing all milestones with goals and durations", "type": "binary"},
+        {"text": "Each milestone contains a Next Milestone Preview section", "type": "binary"},
+        {"text": "Feature flags are assigned to specific milestones", "type": "binary"},
+        {"text": "Each milestone has a Rollback Plan", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Create Milestone 2 document for an e-commerce platform — checkout and payments using Stripe",
+      "assertions": [
+        {"text": "Context section describes what Milestone 1 delivered", "type": "binary"},
+        {"text": "Stripe integration setup appears in Environment Setup Checklist", "type": "binary"},
+        {"text": "Feature flag for payment feature present in Feature Flag Strategy", "type": "binary"},
+        {"text": "Rollback Plan includes payment-specific rollback steps", "type": "binary"},
+        {"text": "API Contracts section includes payment-related endpoints", "type": "binary"},
+        {"text": "Testing Plan includes E2E tests for checkout flow", "type": "binary"},
+        {"text": "Risk register includes payment integration as a risk", "type": "binary"},
+        {"text": "Task breakdown organized by week", "type": "binary"},
+        {"text": "Acceptance criteria present for the checkout user flow", "type": "binary"},
+        {"text": "Next Milestone Preview section present", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Create a sprint plan for Milestone 3 — real-time notifications using WebSockets for a collaboration app",
+      "assertions": [
+        {"text": "WebSocket or real-time technology appears in Tech Stack section", "type": "binary"},
+        {"text": "Environment setup includes WebSocket or pub/sub configuration", "type": "binary"},
+        {"text": "Tasks reference specific API endpoints or DB tables", "type": "binary"},
+        {"text": "Performance target for WebSocket connections included in Acceptance Criteria or Exit Criteria", "type": "binary"},
+        {"text": "Feature flag strategy for real-time feature present", "type": "binary"},
+        {"text": "Rollback plan covers WebSocket server disable procedure", "type": "binary"},
+        {"text": "Testing plan includes load or performance test for real-time connections", "type": "binary"},
+        {"text": "Risk register includes scalability risk for concurrent connections", "type": "binary"},
+        {"text": "All tasks have story point estimates", "type": "binary"},
+        {"text": "Context section describes what prior milestones delivered", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Create Milestone 0 document — infrastructure and environment setup for a Next.js Supabase project",
+      "assertions": [
+        {"text": "Environment Setup Checklist is the primary content section", "type": "binary"},
+        {"text": "Checklist includes GitHub repository setup", "type": "binary"},
+        {"text": "Checklist includes database/Supabase project creation", "type": "binary"},
+        {"text": "Checklist includes CI/CD pipeline configuration", "type": "binary"},
+        {"text": "Checklist includes environment variables setup with .env.example reference", "type": "binary"},
+        {"text": "Exit criteria include: CI/CD pipeline passing, environments accessible, all secrets configured", "type": "binary"},
+        {"text": "Tasks include verification steps for each setup item", "type": "binary"},
+        {"text": "Next Milestone Preview describes what Milestone 1 will build on top of this setup", "type": "binary"},
+        {"text": "Rollback Plan covers how to tear down and recreate the environment", "type": "binary"},
+        {"text": "Document mentions specific tool versions for key dependencies", "type": "binary"}
+      ]
+    }
+  ]
+}

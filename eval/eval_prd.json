@@ -1,0 +1,82 @@
+{
+  "skill": "prd-skill",
+  "version": "2.0",
+  "description": "Binary assertion test suite for PRD Skill self-improvement loop (Karpathy pattern). Each assertion must be objectively true/false — no subjective judgments.",
+  "tests": [
+    {
+      "prompt": "Create a PRD for a mobile habit tracking app, engineering audience",
+      "assertions": [
+        {"text": "Document contains an Executive Summary section", "type": "binary"},
+        {"text": "Executive Summary states the problem before the solution", "type": "binary"},
+        {"text": "Document contains a North Star Metric section", "type": "binary"},
+        {"text": "All user stories have a unique ID starting with US-", "type": "binary"},
+        {"text": "All acceptance criteria use Given/When/Then format", "type": "binary"},
+        {"text": "Goals section contains at least one numeric target value", "type": "binary"},
+        {"text": "Out-of-scope items are explicitly listed in the Scope section", "type": "binary"},
+        {"text": "Document contains an Error States section", "type": "binary"},
+        {"text": "Document contains a Privacy and Compliance section", "type": "binary"},
+        {"text": "Document contains at least one embedded visual element or chart reference", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Create a PRD for an AI-powered customer support chatbot for an enterprise SaaS company",
+      "assertions": [
+        {"text": "Document contains an AI Feature Specification section", "type": "binary"},
+        {"text": "AI section includes a hallucination rate target or quality metric", "type": "binary"},
+        {"text": "Document contains User Flows with numbered steps", "type": "binary"},
+        {"text": "Document contains a Launch Checklist section", "type": "binary"},
+        {"text": "Document mentions GDPR or relevant compliance regulation", "type": "binary"},
+        {"text": "User stories use both User Story and Job Story (JTBD) format for at least one requirement", "type": "binary"},
+        {"text": "Telemetry section lists specific events to track", "type": "binary"},
+        {"text": "Document has a cover page with a Goal Type field", "type": "binary"},
+        {"text": "Risk section contains at least 3 distinct risks", "type": "binary"},
+        {"text": "Timeline section contains at least 2 milestones with feature lists", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Create a client-facing PRD for an e-commerce platform redesign — stakeholder presentation",
+      "assertions": [
+        {"text": "Document contains a Competitive Analysis section or comparison", "type": "binary"},
+        {"text": "Executive Summary leads with the business problem, not the solution", "type": "binary"},
+        {"text": "Goals section includes ROI or business value metric", "type": "binary"},
+        {"text": "Document contains at least one user persona with name and role", "type": "binary"},
+        {"text": "Success metrics are specific and measurable with numeric targets", "type": "binary"},
+        {"text": "Document contains a Scope section with explicit out-of-scope items", "type": "binary"},
+        {"text": "Timeline section present with milestone names and dates or durations", "type": "binary"},
+        {"text": "Document contains an Accessibility Requirements section", "type": "binary"},
+        {"text": "Risk section includes at least one risk with a specific mitigation plan", "type": "binary"},
+        {"text": "Appendix or glossary section present", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Write a PRD for a B2B SaaS analytics dashboard for financial reporting — MVP scope",
+      "assertions": [
+        {"text": "Document contains a North Star Metric", "type": "binary"},
+        {"text": "Goal Type is specified (Learning/Validating/Prototyping/MVP/Production)", "type": "binary"},
+        {"text": "User Flows section present with step-by-step navigation", "type": "binary"},
+        {"text": "Privacy and Compliance section mentions financial data regulations", "type": "binary"},
+        {"text": "Technical Architecture section present with component description", "type": "binary"},
+        {"text": "All user story IDs follow US-XXX format", "type": "binary"},
+        {"text": "MoSCoW prioritization applied to at least 3 requirements", "type": "binary"},
+        {"text": "Error States section covers at least 2 failure scenarios", "type": "binary"},
+        {"text": "Telemetry section present with at least 3 events to track", "type": "binary"},
+        {"text": "Launch Checklist section present", "type": "binary"}
+      ]
+    },
+    {
+      "prompt": "Create a PRD for a real-time team collaboration tool with file sharing — startup, product launch",
+      "assertions": [
+        {"text": "Go-To-Market or Launch section present", "type": "binary"},
+        {"text": "North Star Metric defined", "type": "binary"},
+        {"text": "At least one A/B Test Plan entry or testing hypothesis mentioned", "type": "binary"},
+        {"text": "User Flows section with step-by-step collaborative workflows", "type": "binary"},
+        {"text": "Privacy section covers file storage and sharing data", "type": "binary"},
+        {"text": "Technical Architecture includes real-time component description", "type": "binary"},
+        {"text": "Accessibility Requirements section present", "type": "binary"},
+        {"text": "Launch Checklist section with at least 3 categories", "type": "binary"},
+        {"text": "Error States covers offline or connection failure scenario", "type": "binary"},
+        {"text": "Risk section includes at least one technical risk with mitigation", "type": "binary"}
+      ]
+    }
+  ]
+}
